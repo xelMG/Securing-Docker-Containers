@@ -1,0 +1,40 @@
+body {
+    background-color: #f3e6f5; /* Color de fondo suave morado */
+    margin-top: 50px;
+    font-family: 'Lato';
+}
+
+.item {
+    background-color: #ffffff; /* Blanco para mantener contraste */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 1em #d6bce3; /* Sombra morada suave */
+    transition: all .2s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 1em #b58abf; /* Sombra morada más intensa en hover */
+}
+
+.item.completed {
+    text-decoration: line-through;
+    color: #b58abf; /* Color morado para texto completado */
+}
+
+.toggles {
+    color: #6a1b9a; /* Color morado oscuro */
+}
+
+.name {
+    padding-top: 3px;
+}
+
+.remove {
+    padding-left: 0;
+}
+
+button:focus {
+    border: 1px solid #6a1b9a; /* Borde morado oscuro en el enfoque */
+}
