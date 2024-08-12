@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        UID: ${HOST_UID}
+        GID: ${HOST_GID}
+        MY_USER_NAME: ${MY_USER_NAME}
+    image: your-image-name
+    container_name: your-container-name
+    ports:
+      - "3000:3000"
+
+    command: ["node", "src/index.js"]
